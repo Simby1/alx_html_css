@@ -1,0 +1,398 @@
+:root {
+  --primary-bg: #070707;
+  --secondary-bg: #282828;
+  --accent-color: #ff6565;
+  --light-text: #ffffff;
+  --faded-text: #a3a3a3;
+  --font-family: "Source Sans Pro", sans-serif;
+  --max-width: 1000px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--light-text);
+  background-color: var(--primary-bg);
+}
+
+a {
+  text-decoration: none;
+  color: var(--light-text);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  text-align: center;
+}
+
+p {
+  color: var(--faded-text);
+  text-align: center;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.register-button {
+  background-color: var(--accent-color);
+  color: var(--light-text);
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 22px;
+  padding: 10px 25px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s;
+  margin-top: 30px;
+}
+
+.register-button:hover {
+  opacity: 0.9;
+}
+
+.hero-section {
+  background-color: var(--primary-bg);
+  background-image: url("./resources/background.png");
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 100px;
+}
+
+.header {
+  padding: 20px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--accent-color);
+}
+
+.hero-content {
+  padding-top: 50px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-text-block {
+  margin-bottom: 80px;
+}
+
+.hero-text-block h1 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+
+.hero-tags {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.hero-tags span {
+  color: var(--accent-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin: 0 10px;
+  letter-spacing: 3px;
+}
+
+.pros-section h2 {
+  font-size: 32px;
+  font-weight: 300;
+  margin-bottom: 50px;
+  padding: 0 10%;
+}
+
+.pros-section h2 strong {
+  font-weight: 700;
+}
+
+.pros-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  text-align: center;
+}
+
+.pro-card .profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.pro-card .pro-name {
+  color: var(--accent-color);
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.pro-card .pro-title {
+  font-size: 14px;
+}
+
+.quote-section {
+  background-color: var(--secondary-bg);
+}
+
+.quote-container {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 50px;
+}
+
+.quote-image-container img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.quote-text-container {
+  flex-grow: 1;
+}
+
+.quote-text {
+  font-style: italic;
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.quote-author-name {
+  color: var(--light-text);
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.quote-author-title {
+  color: var(--accent-color);
+  font-size: 16px;
+  text-align: left;
+}
+
+.tutorials-section h2 {
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+.tutorial-cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.tutorial-card {
+  text-align: left;
+}
+
+.tutorial-card .video-cover {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.tutorial-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: left;
+  color: var(--light-text);
+}
+
+.tutorial-card .card-description {
+  font-size: 14px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.card-author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.card-author .author-profile-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card-author h4 {
+  font-size: 14px;
+  color: var(--accent-color);
+  text-align: left;
+}
+
+.card-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card-rating .stars {
+  display: flex;
+  gap: 5px;
+}
+
+.card-rating .fa-star {
+  color: var(--accent-color);
+  font-size: 12px;
+}
+
+.tutorial-card .video-duration {
+  font-size: 14px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.membership-section {
+  background-color: var(--primary-bg);
+}
+
+.membership-section h2 {
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.feature-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  color: var(--light-text);
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 14px;
+}
+
+.faq-section {
+  background-color: var(--secondary-bg);
+}
+
+.faq-section h2 {
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+.faq-columns-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  text-align: left;
+}
+
+.faq-item {
+  margin-bottom: 40px;
+}
+
+.faq-question h3 {
+  font-size: 18px;
+  color: var(--light-text);
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.faq-answer {
+  font-size: 14px;
+  color: var(--faded-text);
+  line-height: 1.5;
+}
+
+.footer {
+  background-color: var(--primary-bg);
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.footer-links .logo {
+  height: 30px;
+  width: auto;
+}
+
+.social-icons a {
+  font-size: 24px;
+  margin-left: 15px;
+  color: var(--light-text);
+}
+
+.social-icons a:hover {
+  color: var(--accent-color);
+}
+
+.copyright {
+  font-size: 12px;
+  color: var(--faded-text);
+}
