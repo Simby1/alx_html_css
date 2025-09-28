@@ -1,7 +1,7 @@
 :root {
   --primary-bg: #070707;
   --secondary-bg: #282828;
-  --accent-color: #ff6565;
+  --accent-color: #c271ff;
   --light-text: #ffffff;
   --faded-text: #a3a3a3;
   --font-family: "Source Sans Pro", sans-serif;
@@ -127,7 +127,7 @@ section {
 }
 
 .hero-tags span {
-  color: var(--accent-color);
+  color: var(--light-text);
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -162,7 +162,7 @@ section {
 }
 
 .pro-card .pro-name {
-  color: var(--accent-color);
+  color: var(--light-text);
   font-size: 16px;
   margin-bottom: 5px;
 }
@@ -172,7 +172,7 @@ section {
 }
 
 .quote-section {
-  background-color: var(--secondary-bg);
+  background-color: #c271ff;
 }
 
 .quote-container {
@@ -210,38 +210,66 @@ section {
 }
 
 .quote-author-title {
-  color: var(--accent-color);
+  color: var(--light-text);
   font-size: 16px;
   text-align: left;
 }
 
+.tutorials-section {
+  background-color: var(--light-text);
+}
 .tutorials-section h2 {
   font-size: 32px;
   margin-bottom: 50px;
+  color: var(--primary-bg);
 }
 
 .tutorial-cards-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+  background-color: var(--light-text);
 }
 
 .tutorial-card {
   text-align: left;
 }
 
+.video-wrapper {
+  position: relative;
+  margin-bottom: 15px;
+  border-radius: 7px 7px 0 0;
+  overflow: hidden;
+}
+
 .tutorial-card .video-cover {
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
-  margin-bottom: 15px;
+  display: block;
+  border-radius: 7px 7px 0 0;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centering trick */
+  font-size: 40px; /* Adjust size as needed */
+  color: var(--accent-color);
+  cursor: pointer;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.play-icon:hover {
+  transform: translate(-50%, -50%) scale(1.1);
 }
 
 .tutorial-card h3 {
   font-size: 18px;
   margin-bottom: 10px;
   text-align: left;
-  color: var(--light-text);
+  color: var(--secondary-bg);
 }
 
 .tutorial-card .card-description {
@@ -315,7 +343,6 @@ section {
 }
 
 .feature-card h3 {
-  color: var(--light-text);
   font-size: 18px;
   margin-bottom: 10px;
 }
@@ -325,12 +352,13 @@ section {
 }
 
 .faq-section {
-  background-color: var(--secondary-bg);
+  background-color: var(--light-text);
 }
 
 .faq-section h2 {
   font-size: 32px;
   margin-bottom: 50px;
+  color: var(--secondary-bg);
 }
 
 .faq-columns-container {
@@ -346,7 +374,7 @@ section {
 
 .faq-question h3 {
   font-size: 18px;
-  color: var(--light-text);
+  color: var(--secondary-bg);
   margin-bottom: 15px;
   text-align: left;
 }
